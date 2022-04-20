@@ -14,7 +14,7 @@ cli-args parsing package in `main.ts` and build out the commands.
 - `example` = A folder, containing entry deno files for demonstrating the modules functionalities 
    - contains `main.ts` - the default file for examples
 - `dependencies` = A folder, including dependency re-exports
-- `my_module_part` = A folder containing more source files which are exported by `mod.ts`
+- `lib` = A folder containing more source files which are exported by `mod.ts`
    - Hint: you may create multiple of them to structure your module.
 - `.gitignore` = A normal gitingore file
 - `deno.json` - a config file for the deno cli
@@ -30,8 +30,7 @@ Run each key there with `deno task <task-key>`
 
 ## Customize this repo 
 
-- rename `my_module_part` folder to something which makes more sense for your deno module 
-- replace `my_module_part/startKia.ts` with a file which makes more sense for your deno module
+- replace `lib/startKia.ts` with a file which makes more sense for your deno module
 
 ## Configure Deployments to deno.land/x 
 
