@@ -17,7 +17,6 @@ cli-args parsing package in `main.ts` and build out the commands.
 - `src` = A folder containing more source files which are used by `main.ts`
 - `.env` = A file with environment variables being used with the `velociraptor` script runner
 - `.gitignore` = A normal gitingore file
-- `deno.jsonc` - A JSON config file with comments to customize tsc, linting and formatting inside deno executable
 - `main.ts` = the entrypoint for this deno script / app
 - `Readme.md` = A normal Readme file
 - `scripts.yaml` = A file defining the workspace scripts, like `vr start` & `vr build`. 
