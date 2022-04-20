@@ -17,15 +17,13 @@ cli-args parsing package in `main.ts` and build out the commands.
 - `my_module_part` = A folder containing more source files which are exported by `mod.ts`
    - Hint: you may create multiple of them to structure your module.
 - `.gitignore` = A normal gitingore file
+- `deno.json` - a config file for the deno cli
+   - includes tasks (a.k.a aliases for long commands) with `deno task`
+- `LICENSE`
 - `mod.ts` = the entrypoint for this deno module, which exports all functionality of this module
 - `Readme.md` = A normal Readme file
 
-## Repo Setup for Contributors
+## Running examples 
 
-1. Install Velociraptor (Script Runner)
-   1. Get the newest install command from here:
-      https://velociraptor.run/docs/installation/
-   2. Run the install command from the website, for example:
-      `deno install -qAn vr https://deno.land/x/velociraptor@1.5.0/cli.ts`
-   3. If you used this exact command from Step 2 from this readme, 
-      run `vr upgrade` afterwards to update velociraptor
+see `tasks` property in `deno.json`
+Run each key there with `deno task <task-key>`
