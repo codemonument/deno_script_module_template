@@ -22,12 +22,7 @@ cli-args parsing package in `main.ts` and build out the commands.
 - `scripts.yaml` = A file defining the workspace scripts, like `vr start` & `vr build`. 
    Needs the `velociraptor` cli to be installed globally. (see install instructions below)
 
-## Adjustments after using the Template
-
-1. Update the `APP_NAME` variable in `.env` file. It is used as name for bundled
-   js files or compiled executables.
-
-## Setup after Cloning
+## Repo Setup for Contributors
 
 1. Install Velociraptor (Script Runner)
    1. Get the newest install command from here:
@@ -36,8 +31,3 @@ cli-args parsing package in `main.ts` and build out the commands.
       `deno install -qAn vr https://deno.land/x/velociraptor@1.5.0/cli.ts`
    3. If you used this exact command from Step 2 from this readme, 
       run `vr upgrade` afterwards to update velociraptor
-
-## TODOs for this Template
-
-- Add automation with Github Actions:
-  https://stefanbuck.com/blog/repository-templates-meets-github-actions
