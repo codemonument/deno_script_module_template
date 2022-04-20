@@ -14,13 +14,11 @@ cli-args parsing package in `main.ts` and build out the commands.
 - `example` = A folder, containing entry deno files for demonstrating the modules functionalities 
    - contains `main.ts` - the default file for examples
 - `dependencies` = A folder, including dependency re-exports
-- `src` = A folder containing more source files which are used by `mod.ts`
-- `.env` = A file with environment variables being used with the `velociraptor` script runner
+- `my_module_part` = A folder containing more source files which are exported by `mod.ts`
+   - Hint: you may create multiple of them to structure your module.
 - `.gitignore` = A normal gitingore file
-- `main.ts` = the entrypoint for this deno script / app
+- `mod.ts` = the entrypoint for this deno module, which exports all functionality of this module
 - `Readme.md` = A normal Readme file
-- `scripts.yaml` = A file defining the workspace scripts, like `vr start` & `vr build`. 
-   Needs the `velociraptor` cli to be installed globally. (see install instructions below)
 
 ## Repo Setup for Contributors
 

@@ -3,4 +3,4 @@
  * which should be used by other people
  */
 
-export * from "./src/utils/startKia.ts";
+export * from "./my_module_part/startKia.ts";
