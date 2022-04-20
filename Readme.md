@@ -27,3 +27,8 @@ cli-args parsing package in `main.ts` and build out the commands.
 
 see `tasks` property in `deno.json`
 Run each key there with `deno task <task-key>`
+
+## Customize this repo 
+
+- rename `my_module_part` folder to something which makes more sense for your deno module 
+- replace `my_module_part/startKia.ts` with a file which makes more sense for your deno module
