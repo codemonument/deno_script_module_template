@@ -1,8 +1,6 @@
 {
     "compilerOptions": {
-        "strict": true,
-        "useUnknownInCatchVariables": true,
-        "noImplicitOverride": true
+        "strict": true
     }, 
     "tasks": {
        "start": "deno run --unstable example/main.ts"
