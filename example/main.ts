@@ -1,21 +1,18 @@
-import { startKia } from "./src/utils/startKia.ts";
+import { startKia } from "../mod.ts";
+import { log } from "./dependencies/log.std.ts";
+import { VERSION } from "../version.ts";
 
-/**
- * VERSION: 0.0.1
- */
-async function main() {
+try {
   const demoKia = await startKia(
-    `Base Deno Repo, Sleep for 3 sek`,
+    `Base Deno Module Example, Sleep for 3 sek`,
   );
   setTimeout(async () => {
     await demoKia.succeed(
-      `Finished Base Deno Repo sucessfully, CDW: ${Deno.cwd()}`,
+      `Finished Base Deno Repo sucessfully}`,
     );
+    log.info(`CDW: ${Deno.cwd()}`);
+    log.info(`Module Version (version.ts): ${VERSION}`);
   }, 3000);
-}
-
-try {
-  await main();
 } catch (error) {
   console.error(error);
   Deno.exit();
