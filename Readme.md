@@ -11,8 +11,6 @@ cli-args parsing package in `main.ts` and build out the commands.
 - `.vscode` = A folder, 
   - containing a `settings.json` which activates the deno language server for this workspace
   - containing a `extensions.json` with recommended vscode extensions for this workspace
-- `dist` = A folder containing the output artefacts, like a bundled js file or
-  even executables for windows or mac
 - `playground` = a location used as cwd for running main.ts (this allows a clean
   testing space and avoids problems with the source-code files, like accidental
   deletion)
