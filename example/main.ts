@@ -10,7 +10,6 @@ try {
     await demoKia.succeed(
       `Finished Base Deno Repo sucessfully}`,
     );
-    log.info(`CDW: ${Deno.cwd()}`);
     log.info(`Module Version (version.ts): ${VERSION}`);
   }, 3000);
 } catch (error) {
