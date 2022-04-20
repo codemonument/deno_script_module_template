@@ -3,5 +3,8 @@
         "strict": true,
         "useUnknownInCatchVariables": true,
         "noImplicitOverride": true
+    }, 
+    "tasks": {
+       "start": "deno run --unstable example/main.ts"
     }
 }
