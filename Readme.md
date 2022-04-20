@@ -32,3 +32,7 @@ Run each key there with `deno task <task-key>`
 
 - rename `my_module_part` folder to something which makes more sense for your deno module 
 - replace `my_module_part/startKia.ts` with a file which makes more sense for your deno module
+
+## Configure Deployments to deno.land/x 
+
+see https://deno.land/add_module
