@@ -11,10 +11,10 @@ cli-args parsing package in `main.ts` and build out the commands.
 - `.vscode` = A folder, 
   - containing a `settings.json` which activates the deno language server for this workspace
   - containing a `extensions.json` with recommended vscode extensions for this workspace
-- `playground` = a location used as cwd for running main.ts (this allows a clean
-  testing space and avoids problems with the source-code files, like accidental
-  deletion)
-- `src` = A folder containing more source files which are used by `main.ts`
+- `example` = A folder, containing entry deno files for demonstrating the modules functionalities 
+   - contains `main.ts` - the default file for examples
+- `dependencies` = A folder, including dependency re-exports
+- `src` = A folder containing more source files which are used by `mod.ts`
 - `.env` = A file with environment variables being used with the `velociraptor` script runner
 - `.gitignore` = A normal gitingore file
 - `main.ts` = the entrypoint for this deno script / app
