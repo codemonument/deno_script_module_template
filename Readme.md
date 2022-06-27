@@ -17,7 +17,7 @@ cli-args parsing package in `main.ts` and build out the commands.
 - `lib` = A folder containing more source files which are exported by `mod.ts`
    - Hint: you may create multiple of them to structure your module.
 - `.gitignore` = A normal gitingore file
-- `deno.json` - a config file for the deno cli
+- `deno.jsonc` - a config file for the deno cli
    - includes tasks (a.k.a aliases for long commands) with `deno task`
 - `LICENSE`
 - `mod.ts` = the entrypoint for this deno module, which exports all functionality of this module
@@ -25,12 +25,8 @@ cli-args parsing package in `main.ts` and build out the commands.
 
 ## Running examples 
 
-see `tasks` property in `deno.json`
+see `tasks` property in `deno.jsonc`
 Run each key there with `deno task <task-key>`
-
-## Customize this repo 
-
-- replace `lib/startKia.ts` with a file which makes more sense for your deno module
 
 ## Configure Deployments to deno.land/x 
 
