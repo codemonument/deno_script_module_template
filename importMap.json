@@ -1,5 +1,7 @@
 {
   "imports": {
+    "/": "./",
+    "./": "./",
     "log.std": "https://deno.land/std@0.154.0/log/mod.ts",
     "testing.std": "./deps/testing.std.ts"
   }
