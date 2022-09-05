@@ -13,7 +13,9 @@ cli-args parsing package in `main.ts` and build out the commands.
   - containing a `extensions.json` with recommended vscode extensions for this workspace
 - `example` = A folder, containing entry deno files for demonstrating the modules functionalities 
    - contains `main.ts` - the default file for examples
-- `dependencies` = A folder, including dependency re-exports
+- `importMap.json` = A file, including dependency mappings to url
+- `deps` - a folder to re-export dependencies 
+   (for example to group testing dependencies into one import)
 - `lib` = A folder containing more source files which are exported by `mod.ts`
    - Hint: you may create multiple of them to structure your module.
 - `.gitignore` = A normal gitingore file
