@@ -5,18 +5,20 @@
  */
 {
     /**
-     * Typescript Compiler Options
+     * TS Compiler Options
      */
     "compilerOptions": {
         "strict": true
     },
-    "importMap": "importMap.json",
+
     /**
-     * Deno tasks is currently unstable. 
-     If you need an alternative, you can use https://deno.land/x/velociraptor
-     * However, since the improved integration into VSCode since 1.21, 
-     * It seems like a vieable option, at least for deno module repositories. 
-     * Docs for Deno Tasks: https://deno.land/manual@v1.20.1/tools/task_runner
+     *  IMPORTANT: Only use import_map.json for testing dependencies, 
+     since it will not be resolved when mod.ts is used as library from outside!
+     */
+    "importMap": "import_map.json",
+
+    /**
+     * Docs for Deno Tasks: https://deno.land/manual@v1.27.1/tools/task_runner
      */
     "tasks": {
         "start": "deno run --unstable example/main.ts"

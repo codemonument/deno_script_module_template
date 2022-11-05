@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "@mod": "./mod.ts",
+    "@deps/": "./deps/",
+    "@testutils/": "./tests/_testutils/"
+  }
+}
