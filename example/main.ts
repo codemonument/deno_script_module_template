@@ -1,6 +1,6 @@
-import {} from "@/mod.ts";
-import { log } from "std_log";
-import { VERSION } from "@/version.ts";
+import {} from "@mod";
+import { VERSION } from "@version";
+import { log } from "@deps/std_log.ts";
 
 try {
   log.info(`Module Version (version.ts): ${VERSION}`);
