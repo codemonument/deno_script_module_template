@@ -2,13 +2,17 @@
 
 A template repo for developing modules with deno. 
 
-## CAUTION 
+## CAUTION!
 
 - DO NOT use import_map.json imports for actual library code! (That is, code that is exported from `mod.ts`)  
   Reason: Once it's consumed by another programmer off of, for example, deno.land/x, the import_map.json file of the imported module 
   WILL NOT BE LOADED!
 - However, you CAN use import_map.json import in tests or example code, which i find very useful, because it enables me to simply 
   pull in my testing dependencies with a concise, absolut import. 
+- Your test code should import all of your classes and functions from the mod.ts entrypoint. 
+  This ensures that you only test the API Surface of your module and not implementation details. 
+  If you absolutely need to validate some internal functionality, do it, but know what you do! 
+
 
 ## Folder Structure
 
