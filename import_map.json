@@ -3,6 +3,7 @@
     "@mod": "./mod.ts",
     "@version": "./version.ts",
     "@deps/": "./deps/",
+    "@testing": "./deps/std_testing.ts",
     "@testutils/": "./tests/_testutils/"
   }
 }
